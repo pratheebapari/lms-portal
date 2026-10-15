@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>University Learning Management Portal</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{padding:32px 24px;border-bottom:1px solid var(--line);text-align:center}
+header h1{font-size:28px}
+header p{color:var(--muted)}
+.version{display:inline-block;margin-top:10px;padding:2px 10px;border:1px solid var(--accent);color:var(--accent);border-radius:20px;font-size:12px}
+nav{display:flex;gap:16px;justify-content:center;padding:12px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:14px}
+nav a:hover{color:var(--accent)}
+main{max-width:1000px;margin:0 auto;padding:24px}
+section{margin-bottom:32px}
+h2{font-size:20px;margin-bottom:12px;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{font-size:16px;margin-bottom:4px}
+.card p{color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
+th{color:var(--accent)}
+footer{text-align:center;padding:20px;color:var(--muted);border-top:1px solid var(--line);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>University Learning Management Portal</h1>
+<p>Courses, faculty, resources, announcements and examinations</p>
+<span class="version">Release v1.0</span>
+</header>
+<nav>
+<a href="#courses">Courses</a>
+<a href="#faculty">Faculty</a>
+<a href="#resources">Resources</a>
+<a href="#announcements">Announcements</a>
+<a href="#exams">Exams</a>
+</nav>
+<main>
+<section id="courses">
+<h2>Courses</h2>
+<div class="grid">
+<div class="card"><h3>ISWE406P</h3><p>Agile Development Process and DevOps</p></div>
+<div class="card"><h3>CSE3001</h3><p>Software Engineering</p></div>
+<div class="card"><h3>CSE2007</h3><p>Database Management Systems</p></div>
+<div class="card"><h3>CSE3002</h3><p>Computer Networks</p></div>
+</div>
+</section>
+<section id="faculty">
+<h2>Faculty Profiles</h2>
+<div class="grid">
+<div class="card"><h3>Dr. A. Kumar</h3><p>Professor, DevOps and Cloud</p></div>
+<div class="card"><h3>Dr. S. Meena</h3><p>Associate Professor, Databases</p></div>
+<div class="card"><h3>Dr. R. Iyer</h3><p>Assistant Professor, Networks</p></div>
+</div>
+</section>
+<section id="resources">
+<h2>Learning Resources</h2>
+<div class="grid">
+<div class="card"><h3>Lecture Notes</h3><p>Weekly slides for every module</p></div>
+<div class="card"><h3>Lab Manuals</h3><p>Step-by-step practical guides</p></div>
+<div class="card"><h3>Video Lectures</h3><p>Recorded sessions and tutorials</p></div>
+</div>
+</section>
+<section id="announcements">
+<h2>Assignment Announcements</h2>
+<div class="grid">
+<div class="card"><h3>Assessment VIII</h3><p>CI/CD with rollback. Due next week.</p></div>
+<div class="card"><h3>Lab Record</h3><p>Submit before the review session.</p></div>
+</div>
+</section>
+<section id="exams">
+<h2>Examination Schedule</h2>
+<table>
+<tr><th>Course</th><th>Exam</th><th>Date</th><th>Time</th></tr>
+<tr><td>ISWE406P</td><td>Lab Exam</td><td>12 Nov 2026</td><td>09:00 AM</td></tr>
+<tr><td>CSE3001</td><td>CAT 2</td><td>15 Nov 2026</td><td>02:00 PM</td></tr>
+<tr><td>CSE2007</td><td>FAT</td><td>20 Nov 2026</td><td>09:30 AM</td></tr>
+</table>
+</section>
+</main>
+<footer>University Learning Management Portal</footer>
+</body>
+</html>
